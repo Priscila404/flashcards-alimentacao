@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f8ef;
+
+    color: #26321f;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: linear-gradient(135deg, #4f7d32, #78a94b);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao {
+    text-align: center;
+
+    padding: 35px 20px 20px;
+}
+
+.introducao h2 {
+    color: #4f7d32;
+
+    margin-bottom: 10px;
+}
+
+.introducao p {
+    font-size: 17px;
+}
+
+
+/* FLASHCARDS */
+
+.flashcards {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px 0 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border: 2px solid #dce8d2;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    min-height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.card h2 {
+    color: #4f7d32;
+
+    margin-bottom: 15px;
+}
+
+.card > p:not(.resposta) {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* BOTÃO */
+
+button {
+    background-color: #4f7d32;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #3d6227;
+
+    transform: scale(1.02);
+}
+
+
+/* RESPOSTA */
+
+.resposta {
+    display: none;
+
+    background-color: #edf6e7;
+
+    border-left: 5px solid #78a94b;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    margin-top: 15px;
+}
+
+.resposta strong {
+    color: #4f7d32;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #26321f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .flashcards {
+        grid-template-columns: 1fr;
+    }
+
+}
